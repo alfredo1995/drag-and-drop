@@ -5,9 +5,11 @@
 https://github.com/alfredo1995/drag-and-drop/assets/71193893/48a8f7c6-8854-4a67-827f-9229bd0a5951
 
 
-IDropHandler é uma interface usada para implementar funcionalidades de manipulação de arrasto e soltar (drag and drop) entre objetos da cena
 
 
+IDropHandler
+
+    IDropHandler é uma interface usada para implementar funcionalidades de manipulação de arrasto e soltar (drag and drop) entre objetos da cena
 
 0° Criar Canvas do tipo imagem 
  
@@ -33,7 +35,7 @@ IDropHandler é uma interface usada para implementar funcionalidades de manipula
 	}}
 
 
-2°)Capturar o evento(Calling Funciton) de quando o mouse estiver iniciando o arrasto e terminando de arrastar o GameOject 
+2° Capturar o evento(Calling Funciton) de quando o mouse estiver iniciando o arrasto e terminando de arrastar o GameOject 
 
 
         //Criar funções para chamar os eventos abaixo:
@@ -69,7 +71,7 @@ IDropHandler é uma interface usada para implementar funcionalidades de manipula
 
 
 
-3°)Manipular o movimento do objeto na função chamando o metodo de arrastar
+3° Manipular o movimento do objeto na função chamando o metodo de arrastar
 
 	*referenciar o componente ReactTransform (moviment) 
 
@@ -116,7 +118,7 @@ IDropHandler é uma interface usada para implementar funcionalidades de manipula
         }}
 	
 
-4°) Alterar o movimento exatamente na mesma taxa (proporcionalmente 1:1) que o ponteiro do mouse ou toque  (tamanho da tela ou da resolução)
+4° Alterar o movimento exatamente na mesma taxa (proporcionalmente 1:1) que o ponteiro do mouse ou toque  (tamanho da tela ou da resolução)
 
 	//Este método é chamado continuamente enquanto o usuário arrasta o objeto.
         //Se você arrastar o ponteiro do mouse 10 pixels em uma direção, o objeto também se moverá 10 pixels nessa mesma direção.
@@ -140,7 +142,7 @@ IDropHandler é uma interface usada para implementar funcionalidades de manipula
 	}
 
 
-5°)Manipular componente CanvasGroup p/ controlar a visibilidade e a interatividade de um grupo de objetos dentro de um Canvas
+5° Manipular componente CanvasGroup p/ controlar a visibilidade e a interatividade de um grupo de objetos dentro de um Canvas
 
 	*Adicionar um novo componente do tipo "canvas group" no gameobject apple (drag)
 
@@ -157,7 +159,7 @@ IDropHandler é uma interface usada para implementar funcionalidades de manipula
 	}
 
 
-6°)Desabilitar o item arrastavel na captura dos eventos (começando e terminando o arrasto)
+6° Desabilitar o item arrastavel na captura dos eventos (começando e terminando o arrasto)
 
 	//raycast é uma operação que permite detectar colisões e interações entre objetos.
 
@@ -176,7 +178,7 @@ IDropHandler é uma interface usada para implementar funcionalidades de manipula
 	    canvasGroup.blocksRaycasts = true;
 
 
-7°) Interface IDropHandler usada nos eventos de arrastar e soltar para manipular o comportamento quando um objeto é solto em um alvo de soltar.
+7° Interface IDropHandler usada nos eventos de arrastar e soltar para manipular o comportamento quando um objeto é solto em um alvo de soltar.
 
 
 	//A assinatura de um método em programação se refere à sua estrutura e formato (interface) 
@@ -194,7 +196,7 @@ IDropHandler é uma interface usada para implementar funcionalidades de manipula
 	}
 
 
-8°) Posicionar o objeto arrastado no local do objeto de soltar (arrastado e liberado)
+8° Posicionar o objeto arrastado no local do objeto de soltar (arrastado e liberado)
 
 	
 	//Acessar o metodo OnDrop quando um objeto é solto (arrastado e liberado) sobre um elemento que implementa a interface ID
